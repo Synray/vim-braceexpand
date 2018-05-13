@@ -24,3 +24,6 @@ endfunction
 
 nnoremap <silent> <Plug>BraceExpand :<C-U>call <SID>BraceExpand()<CR>
 
+if mapcheck("<leader>e") == ""
+    nmap <leader>e <Plug>BraceExpand
+endif
